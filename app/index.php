@@ -64,7 +64,7 @@
 
 	<section class="work">
 		<div class="work__bg">
-			<img class="lazyload" data-src="assets/img/how-work-bg.png" alt="">
+			<img class="lazyload" src="assets/img/how-work-bg.png" alt="">
 		</div>
 		<div class="container">
 			<h3 class="title title_sm">How it <span>works</span></h3>
@@ -72,21 +72,21 @@
 				<div class="work__item">
 					<div class="work__img">
 						<div class="work__img__bg"></div>
-						<img class="lazyload" data-src="assets/img/how-work-1.png" alt="">
+						<img class="lazyload" src="assets/img/how-work-1.png" alt="">
 					</div>
 					<p class="work__text">We provide everyone with a safe and convenient tool for selling their in-game items and add funds to their Steam Wallet. All payments are nearly instant and our support will help you 24\7 to resolve any issues.</p>
 				</div>
 				<div class="work__item">
 					<div class="work__img">
 						<div class="work__img__bg"></div>
-						<img class="lazyload" data-src="assets/img/how-work-2.png" alt="">
+						<img class="lazyload" src="assets/img/how-work-2.png" alt="">
 					</div>
 					<p class="work__text">After you sell in-game items, you’ll receive money on your bank card. We support debit / credit cards from both Visa and Mastercard. Read below or go to <a href="#">“Sell items”</a> to know more.</p>
 				</div>
 				<div class="work__item">
 					<div class="work__img">
 						<div class="work__img__bg"></div>
-						<img class="lazyload" data-src="assets/img/how-work-3.png" alt="">
+						<img class="lazyload" src="assets/img/how-work-3.png" alt="">
 					</div>
 					<p class="work__text">You can instantly add funds to your Steam Wallet using Visa or Mastercard bank cards. Simply enter the required data in the form here or in the <a href="#">“Steam Wallet”</a>  page and the money will be on your account immediately.</p>
 				</div>
