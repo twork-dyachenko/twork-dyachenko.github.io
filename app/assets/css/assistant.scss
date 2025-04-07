@@ -1,0 +1,42 @@
+@use 'assistant/container';
+@use 'assistant/normalize';
+
+html{
+   box-sizing: border-box;
+   -ms-overflow-style: scrollbar;
+   width: 100%;
+   font-size: 100%;
+}
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: inherit;
+   &:before, &:after{
+      box-sizing: inherit;
+   }
+}
+
+body{
+  width: 100%;
+  min-width: 320px;
+  min-height: 100vh;  
+  margin: 0 auto;
+  overflow-x: hidden;
+  &_noscroll{
+     overflow: hidden;
+  }
+}
+
+button{
+  cursor: pointer;
+}
+
+.lazyload, .lazyloading{
+  opacity: 0;
+}
+
+.lazyloaded {
+  opacity: 1;
+  transition: opacity 0.3s linear;
+}

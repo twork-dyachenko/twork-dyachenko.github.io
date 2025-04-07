@@ -1,0 +1,64 @@
+@use "sass:math";
+
+$container-width: 1450px;
+$gutter-width: 40px;
+$columns: 12;
+
+.container {
+  max-width: $container-width;
+  margin: 0 auto;
+  padding-left: calc( $gutter-width / 2 );
+  padding-right: calc( $gutter-width / 2 );
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * #{math.div($gutter-width, 2)});
+  margin-right: calc(-1 * #{math.div($gutter-width, 2)});
+}
+
+[class^="col-"] {
+  padding-left: calc( $gutter-width / 2 );
+  padding-right: calc( $gutter-width / 2 );
+  flex: 1 0 auto;
+}
+
+@for $i from 1 through $columns {
+  .col-#{$i} {
+    width: calc(100% / #{$columns} * #{$i});
+  }
+}
+
+// Медиа-запросы для адаптивности
+@mixin breakpoint($size) {
+  @if $size == sm {
+    @media (max-width: 576px) { @content; }
+  } @else if $size == md {
+    @media (max-width: 768px) { @content; }
+  } @else if $size == lg {
+    @media (max-width: 992px) { @content; }
+  } @else if $size == xl {
+    @media (max-width: 1200px) { @content; }
+  }
+}
+
+@include breakpoint(xl) {
+  .container { max-width: $container-width; }
+}
+
+@include breakpoint(lg) {
+  .container { max-width: 960px; }
+}
+
+@include breakpoint(md) {
+  .container { max-width: 720px; }
+}
+
+@include breakpoint(sm) {
+  .container { max-width: 540px; }
+}
+
+@media (min-width: 1200px) {
+  .container { max-width: $container-width; }
+}
