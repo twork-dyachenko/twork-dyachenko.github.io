@@ -11,9 +11,9 @@
                 </p>
             </div>
             <div class="footer__link">
-                <a href="/selling.php">Selling items</a>
-                <a href="/steam-contact.php">Steam Wallet</a>
-                <a href="/contact.php">Contact us</a>
+                <a href="/sell-items.php">Selling items</a>
+                <a href="/steamwallet.php">Steam Wallet</a>
+                <a href="/contact-us.php">Contact us</a>
                 <a href="https://best-skins-forge.club/en/privacy-policy">Privacy Policy</a>
                 <a href="https://best-skins-forge.club/en/terms-of-use">Terms of Use</a>
             </div>

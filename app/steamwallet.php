@@ -7,8 +7,6 @@
 
 <?php include("menu.php"); ?>
 
-<div id="top"></div>
-
 <main class="steam-page">
 
 	<section class="steam gradient">
