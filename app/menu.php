@@ -12,7 +12,7 @@
             </div>
             <ul class="nav__list">
                 <li class="nav__hide"><a href="#">HOME</a></li>
-                <li><a href="#">SELL ITEMS</a></li>
+                <li><a href="/selling.php">SELL ITEMS</a></li>
                 <li><a href="/steam-contact.php">STEAM WALLET</a></li>
                 <li class="nav__list-active"><a href="/contact.php">CONTACT US</a></li>
             </ul>

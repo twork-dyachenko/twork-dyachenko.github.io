@@ -1,26 +1,24 @@
 <?php include("header.php"); ?>	
-	<title>Document</title>
+	<title>SkinsForge: Steam Wallet funds & in-game items marketplace</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
+	<meta name="description" content="SkinsForge is a service to add funds to Steam Wallet and sell in-game items with benefits. We provide instant payments and have a partnership with marketplaces">
 </head>
 <body>
 
 <?php include("menu.php"); ?>
 <main>
-
 	<section class="hero">
-		<!-- <div class="blur_circle"></div> -->
 		<div class="container">
 			<h1>SKINS<span>FORGE</span></h1>
 			<p class="hero__title">your Steam-based payment tool</p>
 			<ul class="hero__list">
 				<p class="hero__list-title">We will help you:</p>
-				<li class="hero__list-item">Sell your in-game items quickly and profitably! </li>
+				<li class="hero__list-item">Sell your in-game items quickly and profitably!</li>
 				<li class="hero__list-item">Add funds to your Steam Wallet for a new game experience!</li>
 			</ul>
 			<div class="hero__btn">
-				<button class="btn">Top-up Steam Wallet</button>
-				<button class="btn btn_dark">Sell skins & items</button>
+				<button class="btn" aria-label="Top up Steam Wallet">Top-up Steam Wallet</button>
+				<button class="btn btn_dark" aria-label="Sell skins and items">Sell skins & items</button>
 			</div>
 		</div>
 	</section>
@@ -64,7 +62,7 @@
 
 	<section class="work">
 		<div class="work__bg">
-			<img class="lazyload" src="assets/img/how-work-bg.png" alt="">
+			<img class="lazyload" src="assets/img/how-work-bg.png" alt="Backgroung work" loading="lazy">>
 		</div>
 		<div class="container">
 			<h3 class="title title_sm">How it <span>works</span></h3>
@@ -72,23 +70,23 @@
 				<div class="work__item">
 					<div class="work__img">
 						<div class="work__img__bg"></div>
-						<img class="lazyload" src="assets/img/how-work-1.png" alt="">
+						<img class="lazyload" src="assets/img/how-work-1.png" alt="How work 1" loading="lazy">
 					</div>
 					<p class="work__text">We provide everyone with a safe and convenient tool for selling their in-game items and add funds to their Steam Wallet. All payments are nearly instant and our support will help you 24\7 to resolve any issues.</p>
 				</div>
 				<div class="work__item">
 					<div class="work__img">
 						<div class="work__img__bg"></div>
-						<img class="lazyload" src="assets/img/how-work-2.png" alt="">
+						<img class="lazyload" src="assets/img/how-work-2.png" alt="How work 2" loading="lazy">
 					</div>
 					<p class="work__text">After you sell in-game items, you’ll receive money on your bank card. We support debit / credit cards from both Visa and Mastercard. Read below or go to <a href="#">“Sell items”</a> to know more.</p>
 				</div>
 				<div class="work__item">
 					<div class="work__img">
 						<div class="work__img__bg"></div>
-						<img class="lazyload" src="assets/img/how-work-3.png" alt="">
+						<img class="lazyload" src="assets/img/how-work-3.png" alt="How work 3" loading="lazy">
 					</div>
-					<p class="work__text">You can instantly add funds to your Steam Wallet using Visa or Mastercard bank cards. Simply enter the required data in the form here or in the <a href="#">“Steam Wallet”</a>  page and the money will be on your account immediately.</p>
+					<p class="work__text">You can instantly add funds to your Steam Wallet using Visa or Mastercard bank cards. Simply enter the required data in the form here or in the <a href="#">“Steam Wallet”</a> page and the money will be on your account immediately.</p>
 				</div>
 			</div>
 		</div>
@@ -108,13 +106,13 @@
 				</div>
 				<div class="form-group">
 					<label class="form__label" for="phone">Phone Number</label>
-					<input type="tel" id="phone" class="input" placeholder="+1(000)000-0000" pattern="\\+?[0-9\\s\\-()]*" required>
+					<input type="tel" id="phone" class="input" placeholder="+1(000)000-0000" pattern="\\+?[0-9\s\-\(\)]*" required>
 				</div>
 				<div class="form-group form-group--checkbox">
-					<input type="checkbox" id="accept" class="checkbox">
+					<input type="checkbox" id="accept" class="checkbox" aria-label="I agree to the Terms of Use">
 					<label for="accept" class="checkbox__label">
 						<span class="checkbox__custom"></span>
-						I agree with the <a href="#"> Terms of Use</a>
+						I agree with the <a href="https://best-skins-forge.club/en/terms-of-use"> Terms of Use</a>
 					</label>
 				</div>
 				<button type="submit" class="btn">PAY</button>

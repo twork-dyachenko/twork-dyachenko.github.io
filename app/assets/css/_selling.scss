@@ -1,11 +1,10 @@
 @use 'variables' as *;
 .sell{
-    padding-top: 99px;
-    height: 509px;
+    height: 394px;
     &__title{
         font-weight: 500;
         font-size: 29px;
-        line-height: 114.99999999999999%;
+        line-height: 115%;
         letter-spacing: 1%;
         text-transform: uppercase;
         margin-top: 10px;
@@ -16,12 +15,12 @@
     .title{
         position: relative;
         z-index: 2;
-        margin-top: 130px;
-
+        padding-top: 130px;
     }
     &__bg{
         position: absolute;
         right: 0;
+        top: 0;
         &::before{
             content: '';
             position: absolute;
@@ -29,13 +28,13 @@
             height: 100%;
             left: 0;
             top: 0;
-            background: linear-gradient(360deg, #000E15 0%, rgba(0, 14, 21, 0) 100%);
+            background: url('../img/sell-gradient.png') no-repeat center/cover;
         }
     }
     @media screen and (max-width: 996px) {
         height: 100%;
         .title{
-            margin-top: 48px;
+            padding-top: 26px;
             text-align: left;
         }
         &__title{
@@ -63,14 +62,13 @@
     &__title{
         font-weight: 800;
         font-size: 36px;
-        line-height: 114.99999999999999%;
-        color: #fff;
+        line-height: 115%;
+        color: $color-white;
         margin-bottom: 30px;
-        
     }
     &__list{
         background: linear-gradient(93.69deg, rgba(255, 255, 255, 0.25) 0%, rgba(0, 2, 7, 0.0625) 100%);
-        border: 1px solid rgba(255, 255, 255, 1);
+        border: 1px solid $color-white;
         backdrop-filter: blur(10px);
         padding: 30px;
         display: flex;
@@ -85,7 +83,7 @@
         padding: 20px;
         display: flex;
         gap: 15px;
-        background: #fff;
+        background: $color-white;
         border-radius: 15px;
         &-green{
             background: $color-green;
@@ -121,8 +119,6 @@
             margin-bottom: 24px;
         }
         &__list{
-            // flex-direction: column;
-
             border: 0;
             padding: 0;
             background: none;
@@ -179,15 +175,19 @@
     @media screen and (max-width: 1440px){
         &__list{
             gap: 5px;
+            row-gap: 12px;
             justify-content: space-between;
         }
         &__item{
             width: calc(50% - 5px);
+            border-radius: 12px;
         }
     }
     @media screen and (max-width: 996px){
+        padding: 48px 0;
         &__item{
             height: 100px;
+            width: calc(50% - 3px);
         }
     }
 }

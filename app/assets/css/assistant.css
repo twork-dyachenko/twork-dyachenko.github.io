@@ -5,16 +5,6 @@
   padding-right: 20px;
 }
 
-.row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-left: calc(-1 * 20px);
-  margin-right: calc(-1 * 20px);
-}
-
 [class^=col-] {
   padding-left: 20px;
   padding-right: 20px;
@@ -121,9 +111,128 @@ body {
   min-height: 100vh;
   margin: 0 auto;
   overflow-x: hidden;
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  background: #000E15;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 body_noscroll {
   overflow: hidden;
+}
+
+main {
+  margin-top: 100px;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 109px;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #fff;
+}
+@media screen and (max-width: 996px) {
+  h1 {
+    font-weight: 900;
+    font-size: 48px;
+    text-align: center;
+  }
+}
+h1 span {
+  color: #91E300;
+}
+
+.gradient .container {
+  z-index: 2;
+}
+.gradient::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: url("../img/gradient.png") no-repeat center/cover;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 115%;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+}
+.title span {
+  color: #91E300;
+}
+.title_sm {
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 115%;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 996px) {
+  .title_sm {
+    font-size: 36px;
+  }
+}
+
+.blur_circle {
+  -webkit-backdrop-filter: blur(750px);
+          backdrop-filter: blur(750px);
+  background: rgb(21, 52, 72);
+  position: absolute;
+  left: 0;
+  bottom: -50%;
+  width: 581px;
+  height: 581px;
+  border-radius: 50%;
+}
+
+.btn {
+  color: #fff;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 330px;
+  height: 80px;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 115%;
+  letter-spacing: 1%;
+  text-transform: uppercase;
+  background: #91E300;
+  border: 1px solid #fff;
+  border-radius: 25px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+@media screen and (max-width: 996px) {
+  .btn {
+    width: 100%;
+  }
+}
+.btn:hover {
+  background: #000E15;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border: 1px solid #fff;
+}
+
+.btn_dark {
+  background: linear-gradient(93.69deg, rgba(255, 255, 255, 0.25) 0%, rgba(0, 2, 7, 0.0625) 100%);
+}
+.btn_dark:hover {
+  border: 1px solid #91E300;
+  background: linear-gradient(93.69deg, rgba(255, 255, 255, 0.25) 0%, rgba(0, 2, 7, 0.0625) 100%);
 }
 
 button {
