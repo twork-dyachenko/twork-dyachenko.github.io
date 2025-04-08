@@ -12,7 +12,7 @@
 			<h1>SKINS<span>FORGE</span></h1>
 			<p class="hero__title">your Steam-based payment tool</p>
 			<ul class="hero__list">
-				<p class="hero__list-title">We will help you:</p>
+				<li class="hero__list-title">We will help you:</li>
 				<li class="hero__list-item">Sell your in-game items quickly and profitably!</li>
 				<li class="hero__list-item">Add funds to your Steam Wallet for a new game experience!</li>
 			</ul>
@@ -62,7 +62,7 @@
 
 	<section class="work">
 		<div class="work__bg">
-			<img class="lazyload" src="assets/img/how-work-bg.png" alt="Backgroung work" loading="lazy">>
+			<img class="lazyload" src="assets/img/how-work-bg.png" alt="Background work" loading="lazy">
 		</div>
 		<div class="container">
 			<h3 class="title title_sm">How it <span>works</span></h3>

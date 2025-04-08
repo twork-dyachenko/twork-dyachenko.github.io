@@ -137,6 +137,7 @@
 .games{
     padding-top: 60px;
     padding-bottom: 120px;
+    position: relative;
     &__title{
         @extend .steps__title;
         @media screen and (max-width: 1006px){

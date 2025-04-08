@@ -2,6 +2,7 @@
 .footer{
     background: $color-green;
     padding-top: 60px;
+    position: relative;
     &__grid{
         display: flex;
         flex-wrap: wrap;
