@@ -8,6 +8,7 @@
 <?php include("menu.php"); ?>
 <main>
 	<section class="hero">
+		<div class="blur_circle--left"></div>
 		<div class="container">
 			<h1>SKINS<span>FORGE</span></h1>
 			<p class="hero__title">your Steam-based payment tool</p>
@@ -24,6 +25,7 @@
 	</section>
 
 	<section class="why">
+		<div class="blur_circle--right"></div>
 		<div class="container">
 			<h2 class="title title_sm">Why <span>us</span></h2>
 			<div class="why__text">Our goal is to provide gamers with high-quality and fast services such as the sale of game items from the most popular games, as well as replenishment of the Steam account.</div>
@@ -61,6 +63,7 @@
 	</section>
 
 	<section class="work">
+		<div class="blur_circle--left"></div>
 		<div class="work__bg">
 			<img class="lazyload" src="assets/img/how-work-bg.png" alt="Background work" loading="lazy">
 		</div>
@@ -92,17 +95,17 @@
 		</div>
 	</section>
 
-	<section class="steam gradient">
+	<section class="steam">
 		<div class="container">
 			<h3 class="title title_sm">Put money on your <br> <span>Steam Wallet</span></h3>
 			<form class="form">
 				<div class="form-group">
 					<label class="form__label" for="username">Steam Wallet/Account</label>
-					<input type="text" id="username" class="input input--error">
+					<input type="text" id="username" class="input">
 				</div>
 				<div class="form-group">
 					<label class="form__label" for="number">Payment amount</label>
-					<input type="number" id="number" class="input input--success" placeholder="100">
+					<input type="number" id="number" class="input" placeholder="100">
 				</div>
 				<div class="form-group">
 					<label class="form__label" for="phone">Phone Number</label>

@@ -73,8 +73,10 @@
         height: 100vh;
         overflow-y: auto;
     }
-    body.menu-active {
-        overflow: hidden;
+    body{
+        &.menu-active {
+            overflow: hidden;
+        }
     }
 
     .header__buttons {
@@ -116,9 +118,7 @@
 }
 
 .nav__list-active{
-    a{
-        color: $color-green!important;
-    }
+    color: $color-green!important;
 }
 
 .burger {
@@ -192,6 +192,9 @@
                 font-weight: 700;
                 font-size: 18px;
                 text-align: center;
+                &::after{
+                    content: none;
+                }
 
             }
         }

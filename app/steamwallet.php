@@ -9,7 +9,7 @@
 
 <main class="steam-page">
 
-	<section class="steam gradient">
+	<section class="steam">
 		<div class="container">
 			<h1 class="title title_sm">Put money on your <br> <span>Steam Wallet</span></h1>
 			<form class="form">

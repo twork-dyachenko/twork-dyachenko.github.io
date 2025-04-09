@@ -47,6 +47,9 @@
             &:last-child{
                 margin-bottom: 0;
             }
+            &:hover{
+                color: #fff;
+            }
         }
     }
     &__visa{
@@ -70,7 +73,7 @@
         padding-top: 28px;
         &__title{
             font-size: 52.94px;
-            text-align: center;
+            text-align: left;
             margin-bottom: 13px;
         }
         p{

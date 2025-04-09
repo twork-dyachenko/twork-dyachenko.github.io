@@ -8,7 +8,8 @@
 <?php include("menu.php"); ?>
 
 <main>
-    <section class="sell gradient">
+    <section class="sell">
+        <div class="blur_circle--right"></div>
         <div class="sell__bg">
             <img src="assets/img/sell-bg.png" alt="" class="lazyload" loading="lazy">
         </div>

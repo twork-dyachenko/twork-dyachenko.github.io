@@ -14,7 +14,7 @@
                 <li class="nav__hide"><a href="/">HOME</a></li>
                 <li><a href="/sell-items.php">SELL ITEMS</a></li>
                 <li><a href="/steamwallet.php">STEAM WALLET</a></li>
-                <li class="nav__list-active"><a href="/contact-us.php">CONTACT US</a></li>
+                <li><a href="/contact-us.php">CONTACT US</a></li>
             </ul>
             <div class="header__buttons">
                 <button class="exchange">skins.exchange</button>

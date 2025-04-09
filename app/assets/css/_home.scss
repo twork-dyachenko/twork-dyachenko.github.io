@@ -6,6 +6,11 @@
     padding-top: 207px;
     padding-bottom: 307px;
     background-position-y: -102px;
+    background-position-x: -280px;
+    position: relative;
+    .container{
+        position: relative;
+    }
     @media screen and (max-width: 996px){
         background: url('../img/hero-bg-mob.png') no-repeat center/cover;
         padding-bottom: 28px;
@@ -73,6 +78,9 @@
         justify-content: start;
         gap: 30px;
         flex-wrap: wrap;
+        .btn{
+            font-size: 20px;
+        }
         @media screen and (max-width: 996px){
             gap: 24px;
         }
@@ -82,6 +90,10 @@
 .why{
     background: $color-black;
     padding: 120px 0;
+    position: relative;
+    .container{
+        position: relative;
+    }
     @media screen and (max-width: 996px){
         padding: 96px 0;
         .title, .why__text{
@@ -174,6 +186,9 @@
     background-color: $color-black;
     position: relative;
     padding: 120px 0;
+    .container{
+        position: relative;
+    }
     @media screen and (max-width: 996px){
         padding: 0;
     }
@@ -185,6 +200,7 @@
         top: 0px;    
         display: flex;
         justify-content: flex-end;
+        z-index: 3;
         @media screen and (max-width: 1382px){
             display: none;
         }
@@ -268,6 +284,9 @@
     position: relative;
     padding-bottom: 120px;
     padding-top: 129px;
+    .container{
+        position: relative;
+    }
     &__gradient{
         position: absolute;
         width: 100%;
@@ -323,6 +342,7 @@
     @media screen and (max-width: 996px){
         padding-top: 30px;
         padding-bottom: 48px;
+        background-position-y: -230px;
         .title{
             text-align: left;
         }

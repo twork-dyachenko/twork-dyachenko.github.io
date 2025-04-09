@@ -5,6 +5,11 @@
   padding-top: 207px;
   padding-bottom: 307px;
   background-position-y: -102px;
+  background-position-x: -280px;
+  position: relative;
+}
+.hero .container {
+  position: relative;
 }
 @media screen and (max-width: 996px) {
   .hero {
@@ -91,6 +96,9 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+.hero__btn .btn {
+  font-size: 20px;
+}
 @media screen and (max-width: 996px) {
   .hero__btn {
     gap: 24px;
@@ -100,6 +108,10 @@
 .why {
   background: #000E15;
   padding: 120px 0;
+  position: relative;
+}
+.why .container {
+  position: relative;
 }
 @media screen and (max-width: 996px) {
   .why {
@@ -224,6 +236,9 @@
   position: relative;
   padding: 120px 0;
 }
+.work .container {
+  position: relative;
+}
 @media screen and (max-width: 996px) {
   .work {
     padding: 0;
@@ -241,6 +256,7 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  z-index: 3;
 }
 @media screen and (max-width: 1382px) {
   .work__bg {
@@ -340,6 +356,9 @@
   padding-bottom: 120px;
   padding-top: 129px;
 }
+.steam .container {
+  position: relative;
+}
 .steam__gradient {
   position: absolute;
   width: 100%;
@@ -398,6 +417,7 @@
   .contact {
     padding-top: 30px;
     padding-bottom: 48px;
+    background-position-y: -230px;
   }
   .contact .title {
     text-align: left;
@@ -555,7 +575,7 @@
   width: 100%;
 }
 
-.nav__list-active a {
+.nav__list-active {
   color: #91E300 !important;
 }
 
@@ -643,6 +663,9 @@
     font-weight: 700;
     font-size: 18px;
     text-align: center;
+  }
+  .nav__list a::after {
+    content: none;
   }
   .nav.active {
     display: -webkit-box;
@@ -752,6 +775,9 @@
 .footer__link a:last-child {
   margin-bottom: 0;
 }
+.footer__link a:hover {
+  color: #fff;
+}
 .footer__visa {
   background: #fff;
   padding: 37px 0;
@@ -781,7 +807,7 @@
   }
   .footer__title {
     font-size: 52.94px;
-    text-align: center;
+    text-align: left;
     margin-bottom: 13px;
   }
   .footer p {
@@ -820,6 +846,9 @@
 .sell {
   height: 394px;
 }
+.sell .blur_circle--right {
+  bottom: -100px;
+}
 .sell__title {
   font-weight: 500;
   font-size: 29px;
@@ -846,7 +875,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  left: 0;
+  right: 0;
   top: 0;
   background: url("../img/sell-gradient.png") no-repeat center/cover;
 }
@@ -864,9 +893,6 @@
     line-height: 145%;
     text-transform: none;
     margin-bottom: 24px;
-  }
-  .sell__bg img {
-    opacity: 0;
   }
   .sell__bg::before {
     background: url("../img/sell-bg-mob.png") no-repeat center/cover;
@@ -963,6 +989,9 @@
 .games {
   padding-top: 60px;
   padding-bottom: 120px;
+  position: relative;
+}
+.games .container {
   position: relative;
 }
 @media screen and (max-width: 1006px) {
@@ -1117,6 +1146,7 @@
   color: #CFCFCF;
 }
 .form-group .input {
+  font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 125%;

@@ -154,6 +154,7 @@ h1 span {
   left: 0;
   top: 0;
   background: url("../img/gradient.png") no-repeat center/cover;
+  z-index: 1;
 }
 
 .title {
@@ -179,19 +180,48 @@ h1 span {
   }
 }
 
-.blur_circle {
-  -webkit-backdrop-filter: blur(750px);
-          backdrop-filter: blur(750px);
-  background: rgb(21, 52, 72);
+section .container {
+  z-index: 3;
+}
+
+.blur_circle--left {
   position: absolute;
-  left: 0;
-  bottom: -50%;
-  width: 581px;
+  left: -250px;
+  bottom: -240px;
+  width: 40%;
   height: 581px;
-  border-radius: 50%;
+  background: url(../img/ellipse.svg) no-repeat center/cover;
+  z-index: 2;
+  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
+  border-radius: 0 50% 50% 0;
+}
+@media screen and (max-width: 996px) {
+  .blur_circle--left {
+    display: none;
+  }
+}
+
+.blur_circle--right {
+  position: absolute;
+  right: -250px;
+  bottom: -240px;
+  width: 40%;
+  height: 581px;
+  background: url(../img/ellipse.svg) no-repeat center/cover;
+  z-index: 2;
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  border-radius: 50% 0 0 50%;
+}
+@media screen and (max-width: 996px) {
+  .blur_circle--right {
+    display: none;
+  }
 }
 
 .btn {
+  font-family: "Raleway", sans-serif;
   color: #fff;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
