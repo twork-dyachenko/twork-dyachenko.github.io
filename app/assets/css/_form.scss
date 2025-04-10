@@ -174,7 +174,51 @@
             margin-top: 56px;
         }
     }
-    @media screen and (max-width: 996px) {
+    @media screen and (width: 2560px) {
+        padding: 24px 16px;
+        margin-top: 36px;
+        max-width: 100%;
+        &-row{
+            flex-direction: column;
+            gap: 0;
+        }
+        &-group{
+            margin-bottom: 12px;
+            .input{
+                height: 60px;
+            }
+        }
+        .btn{
+            margin-top: 24px;
+            height: 60px;
+        }
+        .form-state{
+            padding-top: 46px;
+            &__icon{
+                width: 256px;
+                height: 256px;
+                svg{
+                    width: 90px;
+                    height: 97px;
+                }
+                
+            }
+            &__text{
+                font-size: 24px;
+            }
+        }
+        &.form-successfully{
+            .btn{
+                margin-top: 52px;
+            }
+        }
+        &.form-again{
+            .btn{
+                margin-top: 24px;
+            }
+        }
+    }
+    @media screen and (max-width: 1440px) {
         padding: 24px 16px;
         margin-top: 36px;
         max-width: 100%;

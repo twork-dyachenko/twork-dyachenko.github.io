@@ -50,7 +50,11 @@ $columns: 12;
 @include breakpoint(sm) {
   .container { max-width: 540px; }
 }
-
-@media (min-width: 1200px) {
+@media screen and (max-width: 1440px) {
+  .container{
+    max-width: 1210px;
+  }
+}
+@media (min-width: 1441px) {
   .container { max-width: $container-width; }
 }

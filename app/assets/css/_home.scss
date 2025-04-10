@@ -8,6 +8,7 @@
     background-position-y: -102px;
     background-position-x: -280px;
     position: relative;
+    // overflow: hidden;
     .container{
         position: relative;
     }
@@ -91,6 +92,7 @@
     background: $color-black;
     padding: 120px 0;
     position: relative;
+    // overflow: hidden;
     .container{
         position: relative;
     }
@@ -149,6 +151,10 @@
         max-width: 400px;
         line-height: 125%;
         text-align: center;
+        @media screen and (max-width: 1440px) {
+            max-width: 340px;
+            margin: 0 auto;
+        }
         @media screen and (max-width: 1382px) {
             max-width: 100%;
             margin: 0 auto;
@@ -186,6 +192,7 @@
     background-color: $color-black;
     position: relative;
     padding: 120px 0;
+    // overflow: hidden;
     .container{
         position: relative;
     }
@@ -225,7 +232,9 @@
         width: 450px;
         height: 390px;
         padding: 20px;
-
+        @media screen and (max-width: 1440px){
+            width: 32%;
+        }
         @media screen and (max-width: 1382px){
             width: 48%;
         }
@@ -298,6 +307,9 @@
     }
     .form{
         max-width: 690px;
+        @media screen and (width: 2560px){
+            max-width: 490px;
+        }
         @media screen and (max-width: 996px){
             max-width: 100%;
         }

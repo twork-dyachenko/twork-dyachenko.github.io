@@ -23,7 +23,7 @@
 				</div>
 				<div class="form-group">
 					<label class="form__label" for="phone">Phone Number</label>
-					<input type="tel" id="phone" class="input" placeholder="+1(000)000-0000" pattern="\\+?[0-9\s\-\(\)]*" required>
+					<input type="tel" id="phone" class="input" placeholder="+1(000)-000-0000" pattern="\\+?[0-9\s\-\(\)]*" required>
 				</div>
 				<div class="form-group form-group--checkbox">
 					<input type="checkbox" id="accept" class="checkbox" aria-label="I agree to the Terms of Use">

@@ -190,6 +190,12 @@
   line-height: 125%;
   text-align: center;
 }
+@media screen and (max-width: 1440px) {
+  .why__item {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+}
 @media screen and (max-width: 1382px) {
   .why__item {
     max-width: 100%;
@@ -293,6 +299,11 @@
   height: 390px;
   padding: 20px;
 }
+@media screen and (max-width: 1440px) {
+  .work__item {
+    width: 32%;
+  }
+}
 @media screen and (max-width: 1382px) {
   .work__item {
     width: 48%;
@@ -371,6 +382,11 @@
 }
 .steam .form {
   max-width: 690px;
+}
+@media screen and (width: 2560px) {
+  .steam .form {
+    max-width: 490px;
+  }
 }
 @media screen and (max-width: 996px) {
   .steam .form {
@@ -845,9 +861,15 @@
 
 .sell {
   height: 394px;
+  position: relative;
 }
 .sell .blur_circle--right {
   bottom: -100px;
+}
+@media screen and (max-width: 1919px) {
+  .sell .blur_circle--right {
+    display: none;
+  }
 }
 .sell__title {
   font-weight: 500;
@@ -959,6 +981,10 @@
   font-weight: 800;
 }
 @media screen and (max-width: 1440px) {
+  .steps__item {
+    max-width: 31%;
+    min-height: 173px;
+  }
   .steps__list {
     gap: 24px;
     -webkit-box-pack: center;
@@ -1275,7 +1301,51 @@
 .form-again .btn {
   margin-top: 56px;
 }
-@media screen and (max-width: 996px) {
+@media screen and (width: 2560px) {
+  .form {
+    padding: 24px 16px;
+    margin-top: 36px;
+    max-width: 100%;
+  }
+  .form-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0;
+  }
+  .form-group {
+    margin-bottom: 12px;
+  }
+  .form-group .input {
+    height: 60px;
+  }
+  .form .btn {
+    margin-top: 24px;
+    height: 60px;
+  }
+  .form .form-state {
+    padding-top: 46px;
+  }
+  .form .form-state__icon {
+    width: 256px;
+    height: 256px;
+  }
+  .form .form-state__icon svg {
+    width: 90px;
+    height: 97px;
+  }
+  .form .form-state__text {
+    font-size: 24px;
+  }
+  .form.form-successfully .btn {
+    margin-top: 52px;
+  }
+  .form.form-again .btn {
+    margin-top: 24px;
+  }
+}
+@media screen and (max-width: 1440px) {
   .form {
     padding: 24px 16px;
     margin-top: 36px;

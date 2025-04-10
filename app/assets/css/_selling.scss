@@ -1,8 +1,15 @@
 @use 'variables' as *;
 .sell{
     height: 394px;
+    position: relative;
+    // overflow: hidden;
     .blur_circle--right{
         bottom: -100px;
+        @media screen and (max-width: 1919px) {
+
+            display: none;
+            
+        }
     }
     &__title{
         font-weight: 500;
@@ -110,6 +117,10 @@
         }
     }
     @media screen and (max-width: 1440px){
+        &__item{
+            max-width: 31%;
+            min-height: 173px;
+        }
         &__list{
             gap: 24px;
             justify-content: center;
