@@ -1,17 +1,16 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 .hero {
   background: url("../img/hero-bg.png") no-repeat;
   padding-top: 207px;
-  padding-bottom: 307px;
-  background-position-y: -102px;
+  padding-bottom: 270px;
+  background-position-y: -145px;
   background-position-x: -280px;
   position: relative;
 }
 .hero .container {
   position: relative;
 }
-@media screen and (max-width: 996px) {
+@media screen and (max-width: 1024px) {
   .hero {
     background: url("../img/hero-bg-mob.png") no-repeat center/cover;
     padding-bottom: 28px;
@@ -107,7 +106,7 @@
 
 .why {
   background: #000E15;
-  padding: 120px 0;
+  padding: 80px 0;
   position: relative;
 }
 .why .container {
@@ -220,8 +219,8 @@
   }
 }
 .why__icon {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   border-radius: 10px;
   background: #91E300;
   display: -webkit-box;
@@ -240,7 +239,7 @@
 .work {
   background-color: #000E15;
   position: relative;
-  padding: 120px 0;
+  padding: 80px 0;
 }
 .work .container {
   position: relative;
@@ -270,43 +269,32 @@
   }
 }
 .work__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-top: 60px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 }
-@media screen and (max-width: 1382px) {
+@media screen and (max-width: 996px) {
   .work__list {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    gap: 36px;
-    margin-top: 26px;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    margin-top: 24px;
   }
 }
 .work__item {
   background: linear-gradient(93.69deg, rgba(255, 255, 255, 0.25) 0%, rgba(0, 2, 7, 0.0625) 100%);
-  border: 1px solid #fff;
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
   border-radius: 25px;
-  width: 450px;
+  width: 100%;
   height: 390px;
   padding: 20px;
 }
-@media screen and (max-width: 1440px) {
-  .work__item {
-    width: 32%;
-  }
-}
 @media screen and (max-width: 1382px) {
   .work__item {
-    width: 48%;
+    border: 1px solid #fff;
   }
 }
 @media screen and (max-width: 996px) {
@@ -365,7 +353,7 @@
   background: url("../img/steam-wallet-bg.png") no-repeat center/cover;
   position: relative;
   padding-bottom: 120px;
-  padding-top: 129px;
+  padding-top: 80px;
 }
 .steam .container {
   position: relative;
@@ -396,7 +384,7 @@
 @media screen and (max-width: 996px) {
   .steam {
     padding-top: 96px;
-    padding-bottom: 48px;
+    padding-bottom: 124px;
   }
 }
 @media screen and (max-width: 750px) {
@@ -411,9 +399,15 @@
   }
 }
 
+.steam-page .steam {
+  padding-top: 100px;
+  padding-bottom: 216px;
+}
 @media screen and (max-width: 996px) {
   .steam-page .steam {
+    background-position-x: 75%;
     padding-top: 48px;
+    padding-bottom: 48px;
   }
   .steam-page .steam .title {
     text-align: left;
@@ -431,7 +425,7 @@
 }
 @media screen and (max-width: 996px) {
   .contact {
-    padding-top: 30px;
+    padding-top: 48px;
     padding-bottom: 48px;
     background-position-y: -230px;
   }
@@ -447,7 +441,7 @@
     min-height: 60px;
   }
   .contact .form .btn {
-    margin-top: 36px;
+    margin-top: 60px;
   }
   .contact .title {
     padding-left: 16px;
@@ -569,7 +563,7 @@
   color: white;
   text-decoration: none;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 115%;
   text-transform: uppercase;
   -webkit-transition: 0.3s;
@@ -618,11 +612,15 @@
 }
 
 @media screen and (max-width: 1160px) {
+  main {
+    margin-top: 64px;
+  }
   .header {
     background: transparent;
     border-bottom: none;
     -webkit-backdrop-filter: none;
             backdrop-filter: none;
+    height: 64px;
   }
   .header__buttons {
     display: none;
@@ -774,12 +772,12 @@
 }
 .footer__link a {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 16px;
   line-height: 115%;
   text-transform: uppercase;
   text-decoration: none;
   color: #000E15;
-  margin-bottom: 17px;
+  margin-bottom: 27px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -860,11 +858,10 @@
 }
 
 .sell {
-  height: 394px;
   position: relative;
 }
 .sell .blur_circle--right {
-  bottom: -100px;
+  top: 180%;
 }
 @media screen and (max-width: 1919px) {
   .sell .blur_circle--right {
@@ -878,7 +875,7 @@
   letter-spacing: 1%;
   text-transform: uppercase;
   margin-top: 10px;
-  margin-bottom: 262px;
+  margin-bottom: 150px;
   position: relative;
   z-index: 2;
 }
@@ -906,7 +903,7 @@
     height: 100%;
   }
   .sell .title {
-    padding-top: 26px;
+    padding-top: 48px;
     text-align: left;
   }
   .sell__title {
@@ -1006,6 +1003,7 @@
   .steps__item {
     max-width: 100%;
     height: 100%;
+    min-height: auto;
   }
   .steps__item--text {
     font-size: 16px;
@@ -1022,7 +1020,7 @@
 }
 @media screen and (max-width: 1006px) {
   .games__title {
-    margin-bottom: 12px;
+    margin-bottom: 22px;
   }
 }
 .games__list {
@@ -1032,10 +1030,13 @@
   gap: 30px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .games__item {
-  width: 330px;
-  height: 200px;
+  width: 248px;
+  height: 150px;
   background: #91E300;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1061,26 +1062,29 @@
     display: none;
   }
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1200px) {
   .games__list {
-    gap: 5px;
-    row-gap: 12px;
+    gap: 38px;
+    row-gap: 32px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    padding-left: 16px;
+    padding-right: 16px;
   }
   .games__item {
-    width: calc(50% - 5px);
+    width: calc(50% - 38px);
     border-radius: 12px;
   }
 }
 @media screen and (max-width: 996px) {
   .games {
     padding: 48px 0;
+    padding-bottom: 58px;
   }
   .games__item {
-    height: 100px;
-    width: calc(50% - 3px);
+    height: 80px;
+    width: calc(50% - 35px);
   }
 }
 
@@ -1102,7 +1106,7 @@
   margin: 0;
 }
 .form input[type=number] {
-  -moz-appearance: textfield; /* Для Firefox */
+  -moz-appearance: textfield;
 }
 .form-row {
   display: -webkit-box;
@@ -1111,7 +1115,7 @@
   gap: 30px;
 }
 .form-row .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .form-row--2 > .form-group {
   -webkit-box-flex: 1;
@@ -1129,7 +1133,7 @@
 }
 .form .btn {
   width: 100%;
-  margin-top: 60px;
+  margin-top: 30px;
   border-radius: 10px;
   border: none;
 }
@@ -1174,13 +1178,13 @@
 .form-group .input {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
-  font-size: 36px;
+  font-size: 24px;
   line-height: 125%;
   width: 100%;
   padding: 18px 15px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  height: 80px;
+  height: 60px;
   border-radius: 10px;
   border: 2px solid #fff;
 }
@@ -1387,5 +1391,13 @@
   }
   .form.form-again .btn {
     margin-top: 24px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .form-group {
+    margin-bottom: 24px;
+  }
+  .form .input {
+    height: 48px;
   }
 }

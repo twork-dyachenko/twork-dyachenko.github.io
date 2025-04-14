@@ -34,12 +34,12 @@
         flex-direction: column;
         a{
             font-weight: 700;
-            font-size: 24px;
+            font-size: 16px;
             line-height: 115%;
             text-transform: uppercase;
             text-decoration: none;
             color: $color-black;
-            margin-bottom: 17px;
+            margin-bottom: 27px;
             transition: .3s;
             @media screen and (min-width: 996px){
                 padding-left: 15px;

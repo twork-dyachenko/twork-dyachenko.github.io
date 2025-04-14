@@ -15,11 +15,13 @@
 			<form class="form">
 				<div class="form-group">
 					<label class="form__label" for="username">Steam Wallet/Account</label>
-					<input type="text" id="username" class="input input--error">
+					<input type="text" id="username" class="input">
+					<!-- input--error -->
 				</div>
 				<div class="form-group">
 					<label class="form__label" for="number">Payment amount</label>
-					<input type="number" id="number" class="input input--success" placeholder="100">
+					<input type="number" id="number" class="input" placeholder="100">
+					<!-- input--success -->
 				</div>
 				<div class="form-group">
 					<label class="form__label" for="phone">Phone Number</label>
@@ -35,7 +37,7 @@
 				<button type="submit" class="btn">PAY</button>
 			</form>
 
-			<form class="form form-state form-successfully">
+			<!-- <form class="form form-state form-successfully">
 				<div class="form-state__icon">
 					<svg viewBox="0 0 96 145" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M0.249494 75.5648V44.0183H26.6525V75.5648H0.249494ZM0.249494 133V101.454H26.6525V133H0.249494ZM95.3537 73.336C95.3537 81.4512 94.0393 89.6236 91.4104 97.8531C88.8958 106.083 85.5812 114.141 81.4664 122.027C77.3517 129.8 72.9512 137.229 68.2649 144.316L44.605 132.829C50.32 121.97 55.1205 111.798 59.0067 102.311C63.0072 92.7097 65.0074 83.2228 65.0074 73.8503C65.0074 67.6782 64.1501 61.3346 62.4357 54.8196C60.8355 48.3046 58.7781 42.0753 56.2635 36.1317C53.8632 30.1882 51.5201 24.9876 49.2341 20.5299C46.9482 16.0723 45.1194 12.7576 43.7478 10.5859L68.6078 0.641931C76.1515 13.4434 82.4951 25.902 87.6386 38.0177C92.782 50.019 95.3537 61.7918 95.3537 73.336Z" fill="white"/>
@@ -53,7 +55,7 @@
 				</div>
 				<div class="form-state__text">Oops... <br> something went wrong</div>
 				<button type="submit" class="btn">To try again</button>
-			</form>
+			</form> -->
 
 		</div>
 	</section>

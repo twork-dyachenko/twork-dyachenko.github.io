@@ -92,7 +92,7 @@
             color: white;
             text-decoration: none;
             font-weight: 700;
-            font-size: 18px;
+            font-size: 14px;
             line-height: 115%;
     
             text-transform: uppercase;
@@ -143,10 +143,15 @@
 }
 
 @media screen and (max-width: 1160px) {
+    main{
+        margin-top: 64px;
+    }
     .header{
         background: transparent;
         border-bottom: none;
         backdrop-filter: none;
+        height: 64px;
+        
         &__buttons{
             display: none;
         }
