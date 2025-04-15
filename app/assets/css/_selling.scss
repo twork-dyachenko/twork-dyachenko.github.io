@@ -1,8 +1,6 @@
 @use 'variables' as *;
 .sell{
-    // height: 394px;
     position: relative;
-    // overflow: hidden;
     .blur_circle--right{
         top: 180%;
         @media screen and (max-width: 1919px) {
@@ -55,9 +53,6 @@
             margin-bottom: 24px;
         }
         &__bg{
-            img{
-                // opacity: 0;
-            }
             &::before{
                 background: url('../img/sell-bg-mob.png') no-repeat center/cover;
                 z-index: 2;

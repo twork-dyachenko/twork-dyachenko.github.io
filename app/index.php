@@ -6,6 +6,7 @@
 <body>
 
 <?php include("menu.php"); ?>
+
 <main>
 	<section class="hero">
 		<div class="blur_circle--left"></div>
@@ -98,7 +99,7 @@
 	<section class="steam">
 		<div class="container">
 			<h3 class="title title_sm">Put money on your <br> <span>Steam Wallet</span></h3>
-			<form class="form">
+			<form class="form" id="paymentForm">
 				<div class="form-group">
 					<label class="form__label" for="username">Steam Wallet/Account</label>
 					<input type="text" id="username" class="input">
@@ -109,10 +110,10 @@
 				</div>
 				<div class="form-group">
 					<label class="form__label" for="phone">Phone Number</label>
-					<input type="tel" id="phone" class="input" placeholder="+1(000)-000-0000" pattern="\\+?[0-9\s\-\(\)]*" required>
+					<input type="text" id="phone" class="input" placeholder="+1 (___) ___-____" required>
 				</div>
 				<div class="form-group form-group--checkbox">
-					<input type="checkbox" id="accept" class="checkbox" aria-label="I agree to the Terms of Use">
+					<input type="checkbox" id="accept" class="checkbox" aria-label="I agree to the Terms of Use" required>
 					<label for="accept" class="checkbox__label">
 						<span class="checkbox__custom"></span>
 						I agree with the <a href="https://best-skins-forge.club/en/terms-of-use"> Terms of Use</a>
@@ -120,8 +121,8 @@
 				</div>
 				<button type="submit" class="btn">PAY</button>
 			</form>
-
 		</div>
 	</section>
 </main>
+
 <?php include("footer.php"); ?>

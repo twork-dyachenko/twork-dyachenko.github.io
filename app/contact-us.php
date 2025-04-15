@@ -11,7 +11,7 @@
     <section class="contact gradient">
         <div class="container">
             <h1 class="title title_sm">Our <span>contacts</span></h1>
-            <form class="form">
+            <form class="form" id="paymentForm">
                 <div class="form-row form-row--2">
                     <div class="form-group">
                     <label class="form__label" for="fullName">Full Name</label>
@@ -33,7 +33,7 @@
                     </div>
                     <div class="form-group">
                     <label class="form__label" for="phone">Phone Number</label>
-                    <input type="tel" id="phone" class="input" pattern="\\+?[0-9\s\-\(\)]*" required>
+                    <input type="text" id="phone" class="input" placeholder="+1 (___) ___-____" required>
                     </div>
                 </div>
                 <div class="form-group">
@@ -44,7 +44,6 @@
             </form>
         </div>
     </section>
-
 </main>
 
 <?php include("footer.php"); ?>

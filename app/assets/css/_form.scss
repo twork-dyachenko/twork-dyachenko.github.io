@@ -9,13 +9,11 @@
     padding: 40px;
     position: relative;
     z-index: 1;
-
     input[type="number"]::-webkit-outer-spin-button,
     input[type="number"]::-webkit-inner-spin-button {
         -webkit-appearance: none;
         margin: 0;
     }
-
     input[type="number"] {
         -moz-appearance: textfield;
     }
@@ -57,6 +55,12 @@
         gap: 5px;
         width: 100%;
         margin-bottom: 30px;
+        #phone{
+            color: rgba(207, 207, 207, 1);
+            &.input--error,&.input--success{
+                color: $color-black;
+            }
+        }
         a {
             font-weight: 700;
             color: $color-green;
@@ -76,6 +80,7 @@
             height: 60px;
             border-radius: 10px;
             border: 2px solid $color-white;
+            
             &::placeholder{
                 color: rgba(207, 207, 207, 1);
             }
@@ -98,15 +103,17 @@
         }
         .checkbox {
             display: none;
-
+        
             &__label {
                 display: flex;
                 align-items: center;
                 cursor: pointer;
-                a{
+                
+                a {
                     margin-left: 5px;
                 }
             }
+        
             &__custom {
                 width: 36px;
                 height: 36px;
@@ -117,7 +124,8 @@
                 transition: 0.2s;
                 margin-right: 10px;
             }
-            &:checked+.checkbox__label .checkbox__custom::after {
+        
+            &:checked + .checkbox__label .checkbox__custom::after {
                 content: "";
                 background-image: url("data:image/svg+xml,%3Csvg width='24' height='16' viewBox='0 0 24 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22 2L8.66667 14L2 8' stroke='%23000E15' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
                 width: 100%;
@@ -156,7 +164,7 @@
             margin-top: 40px;
         }
         .btn{
-            margin-top: 104px;
+            margin-top: 56px;
         }
     }
     &-successfully{
@@ -210,7 +218,7 @@
         }
         &.form-successfully{
             .btn{
-                margin-top: 52px;
+                margin-top: 24px;
             }
         }
         &.form-again{
@@ -254,7 +262,7 @@
         }
         &.form-successfully{
             .btn{
-                margin-top: 52px;
+                margin-top: 24px;
             }
         }
         &.form-again{

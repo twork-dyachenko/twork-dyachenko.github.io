@@ -1155,6 +1155,12 @@
   width: 100%;
   margin-bottom: 30px;
 }
+.form-group #phone {
+  color: rgb(207, 207, 207);
+}
+.form-group #phone.input--error, .form-group #phone.input--success {
+  color: #000E15;
+}
 .form-group a {
   font-weight: 700;
   color: #91E300;
@@ -1291,7 +1297,7 @@
   margin-top: 40px;
 }
 .form-state .btn {
-  margin-top: 104px;
+  margin-top: 56px;
 }
 .form-successfully .form-state__icon {
   background: #91E300;
@@ -1343,7 +1349,7 @@
     font-size: 24px;
   }
   .form.form-successfully .btn {
-    margin-top: 52px;
+    margin-top: 24px;
   }
   .form.form-again .btn {
     margin-top: 24px;
@@ -1387,7 +1393,7 @@
     font-size: 24px;
   }
   .form.form-successfully .btn {
-    margin-top: 52px;
+    margin-top: 24px;
   }
   .form.form-again .btn {
     margin-top: 24px;
